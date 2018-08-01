@@ -29,6 +29,6 @@ my $pair   = cons( 66, 77 );
 my $first  = car($pair);
 my $second = cdr($pair);
 
-say $first;
-say $second;
+# say $first;
+# say $second;
 1;

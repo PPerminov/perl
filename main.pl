@@ -2,23 +2,20 @@
 use strict;
 use warnings;
 use 5.010;
-# package Main;
+package Main;
 # require "./lists/lists.pl";
 # require "./pairs/pairs.pl";
-# my $l = Lists::list(1,2,3,4,5,6);
-# my $h = Lists::head($l);
-# say Lists::head(Lists::tail($l));
+require "./node/nodes.pl";
 #
-# # sub foo {
-# #   print "foo";
-# # }
-# #
-# # sub bar {
-# #   print "bar";
-# # }
-# #
-# # my @array = (
-# #     \&foo,
-# #     \&bar,
-# # );
-# print $array[0]();
+# my $name1       = "name1";
+# my $parameters1 = Node::createParameters(
+#     Node::createParameter( "name1", "value1" ),
+#     Node::createParameter( "name2", "value2" )
+# );
+# my $node0 = Node::node( undef,   undef,        undef,  "somevalue" );
+# my $node1 = Node::node( "name1", $parameters1, $node0, undef );
+#
+# say Node::getNodeName($node1);
+# say Node::getNodeChildren($node1);
+# say Node::getParameterName(Node::getFirstParameter(Node::getNodeParams($node1)));
+# say Node::getParameterValue(Node::getFirstParameter(Node::getNodeParams($node1)));
