@@ -1,7 +1,6 @@
 use strict;
 use warnings;
 use 5.010;
-# use 6;
 
 package Pairs;
 
@@ -19,18 +18,17 @@ sub cons {
 }
 
 sub car {
-  my $f = \@_;
-  # say \$f;
-    return ($f)->('car');
+  return $_[0]("car");
 }
 
 sub cdr {
-    return \$_[0]('cdr');
+    return $_[0]('cdr');
 }
 
-my $pair = cons(66,77);
-my $first = car($pair);
+my $pair   = cons( 66, 77 );
+my $first  = car($pair);
 my $second = cdr($pair);
-# say $first;
-# say $second;
+
+say $first;
+say $second;
 1;
